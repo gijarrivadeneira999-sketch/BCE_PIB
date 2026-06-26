@@ -9,7 +9,7 @@
     --ink-soft:#4A5876;
     --paper:#FFFFFF;
     --line:#E4E4E4;
-    --teal:#0E7C7B;
+    --teal:#2563EB;
     --coral:#C8553D;
   }
   *{box-sizing:border-box;}
@@ -125,8 +125,8 @@
     <svg viewBox="0 0 940 400" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1B2A4A" stop-opacity="0.14"/>
-          <stop offset="100%" stop-color="#1B2A4A" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#2563EB" stop-opacity="0.14"/>
+          <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
         </linearGradient>
       </defs>
       <g id="plot"></g>
@@ -134,7 +134,7 @@
     <div class="tooltip" id="tooltip"></div>
 
     <div class="legend">
-      <div class="legend-item"><span class="swatch" style="background:#0E7C7B"></span> Variación positiva</div>
+      <div class="legend-item"><span class="swatch" style="background:#2563EB"></span> Variación positiva</div>
       <div class="legend-item"><span class="swatch" style="background:#C8553D"></span> Variación negativa</div>
       <div class="legend-item" style="margin-left:auto;">Línea: tendencia suavizada (spline) · pasa el cursor sobre un punto</div>
     </div>
@@ -280,7 +280,7 @@ function showTooltip(i){
   const px = svgRect.left - wrapRect.left + x*scale;
   const py = svgRect.top - wrapRect.top + y*scale;
 
-  tooltip.innerHTML = `<div class="t-period">${d[0]}</div><div class="t-val" style="color:${d[1]>=0?'#5FD4C8':'#FF9B7E'}">${d[1]>=0?'+':''}${d[1].toFixed(1)}%</div>`;
+  tooltip.innerHTML = `<div class="t-period">${d[0]}</div><div class="t-val" style="color:${d[1]>=0?'#7DA8F5':'#FF9B7E'}">${d[1]>=0?'+':''}${d[1].toFixed(1)}%</div>`;
   tooltip.style.left = px + 'px';
   tooltip.style.top = (py-12) + 'px';
   tooltip.style.opacity = 1;

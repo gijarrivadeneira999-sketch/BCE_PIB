@@ -9,7 +9,7 @@
     --ink-soft:#4A5876;
     --paper:#FFFFFF;
     --line:#E4E4E4;
-    --teal:#0E7C7B;
+    --purple:#7C3AED;
     --coral:#C8553D;
   }
   *{box-sizing:border-box;}
@@ -25,7 +25,7 @@
     font-size:11px;
     letter-spacing:.14em;
     text-transform:uppercase;
-    color:var(--teal);
+    color:var(--purple);
     font-weight:700;
     margin:0 0 6px;
   }
@@ -52,7 +52,7 @@
   svg{display:block;width:100%;height:auto;overflow:visible;}
   .gridline{stroke:var(--line);stroke-width:1;}
   .zero-line{stroke:var(--ink-soft);stroke-width:1.1;}
-  .bar-pos{fill:var(--teal);cursor:pointer;transition:opacity .12s ease;}
+  .bar-pos{fill:var(--purple);cursor:pointer;transition:opacity .12s ease;}
   .bar-neg{fill:var(--coral);cursor:pointer;transition:opacity .12s ease;}
   .bar-pos.dim, .bar-neg.dim{opacity:.45;}
   .row-hit{fill:transparent;cursor:pointer;}
@@ -65,7 +65,7 @@
     font-size:11px;
     font-weight:700;
   }
-  .val-pos{fill:var(--teal);}
+  .val-pos{fill:var(--purple);}
   .val-neg{fill:var(--coral);}
   .footer{
     display:flex;
@@ -120,7 +120,7 @@
     </svg>
     <div class="tooltip" id="tooltip"></div>
     <div class="legend">
-      <div class="legend-item"><span class="swatch" style="background:#0E7C7B"></span> Crecimiento</div>
+      <div class="legend-item"><span class="swatch" style="background:#7C3AED"></span> Crecimiento</div>
       <div class="legend-item"><span class="swatch" style="background:#C8553D"></span> Contracción</div>
       <div class="legend-item" style="margin-left:auto;">Pasa el cursor sobre una barra</div>
     </div>
@@ -214,7 +214,7 @@ function showTooltip(i, barEl){
   const px = svgRect.left - wrapRect.left + x*scale;
   const py = svgRect.top - wrapRect.top + yc*scale;
 
-  tooltip.innerHTML = `<div class="t-period">${name}</div><div class="t-val" style="color:${val>=0?'#5FD4C8':'#FF9B7E'}">${val>=0?'+':''}${val.toFixed(1)}%</div>`;
+  tooltip.innerHTML = `<div class="t-period">${name}</div><div class="t-val" style="color:${val>=0?'#B69CF2':'#FF9B7E'}">${val>=0?'+':''}${val.toFixed(1)}%</div>`;
   tooltip.style.left = px + 'px';
   tooltip.style.top = (py-14) + 'px';
   tooltip.style.opacity = 1;

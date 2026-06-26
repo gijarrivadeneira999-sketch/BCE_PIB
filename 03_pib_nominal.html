@@ -9,8 +9,8 @@
     --ink-soft:#4A5876;
     --paper:#FFFFFF;
     --line:#E4E4E4;
-    --gold:#B6862C;
-    --gold-light:#E8D6A8;
+    --navy:#1E40AF;
+    --navy-light:#A9BEEC;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;background:var(--paper);}
@@ -25,7 +25,7 @@
     font-size:11px;
     letter-spacing:.14em;
     text-transform:uppercase;
-    color:var(--gold);
+    color:var(--navy);
     font-weight:700;
     margin:0 0 6px;
   }
@@ -51,16 +51,16 @@
   }
   svg{display:block;width:100%;height:auto;overflow:visible;}
   .gridline{stroke:var(--line);stroke-width:1;}
-  .bar{fill:var(--gold-light);transition:fill .12s ease;cursor:pointer;}
-  .bar.latest{fill:var(--gold);}
-  .bar.hovered{fill:var(--gold);}
+  .bar{fill:var(--navy-light);transition:fill .12s ease;cursor:pointer;}
+  .bar.latest{fill:var(--navy);}
+  .bar.hovered{fill:var(--navy);}
   .val-label{
     font-size:9.6px;
     font-weight:700;
     fill:var(--ink);
     text-anchor:middle;
   }
-  .val-label.latest{fill:var(--gold); font-size:11px;}
+  .val-label.latest{fill:var(--navy); font-size:11px;}
   .xtick{font-size:10px;fill:var(--ink-soft);text-anchor:middle;}
   .ytick{font-size:10px;fill:var(--ink-soft);text-anchor:end;}
   .year-band{fill:var(--ink); opacity:0.03;}
@@ -86,7 +86,7 @@
     font-family: Georgia, serif;
     font-size:19px;
     font-weight:700;
-    color:var(--gold);
+    color:var(--navy);
     line-height:1.1;
   }
   .callout .small{
@@ -112,7 +112,7 @@
     box-shadow:0 4px 14px rgba(0,0,0,.18);
   }
   .tooltip .t-period{font-weight:700; font-size:11px; opacity:.75; text-transform:uppercase; letter-spacing:.04em;}
-  .tooltip .t-val{font-size:15px; font-weight:700; font-family:Georgia,serif; color:#E8C674;}
+  .tooltip .t-val{font-size:15px; font-weight:700; font-family:Georgia,serif; color:#8FA8E8;}
 </style>
 </head>
 <body>
